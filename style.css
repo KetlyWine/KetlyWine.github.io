@@ -1,108 +1,121 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family: Source Serif Pro;
+  margin: 0;
+  padding: 0;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-    background-color: #9B6647;
+#page {
+  display: flex;
+  height: 100vh;
 }
 
-#principal {
-    padding: 5%;
-    background-color: #feece0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  width: 40%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 4rem;
 }
 
-.imgPamonha {
-    width: 409px;
-    height: 293px;
+header {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
-#count {
-    font-size: 2rem;
-    margin: 0.1rem;
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0%;
-
+main h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #1E293B;
 }
 
-.info {
-    margin-left: 5%;
+main p {
+  color: #5f6368;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
-.info h1 {
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #59190a;
+form {
+  width: 100%;
 }
 
-.info p {
-    margin: 5px 0px 15px 0px;
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #59190a;
+.email, .input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
-.buttons span {
-    font-weight: 400;
-    font-size: 1.5rem;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #9B6647;
+.email label,
+.input label {
+  color: #1E293B;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
 }
 
-.buttons button {
-    background: none;
-    border: none;
-    width: 30px;
-    height: 30px;
-    margin: 0% 2%;
-    padding: none;
+.email input,
+.input input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
 }
 
-.buttons {
-    display: flex;
-    align-items: center;
+.input img {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.9rem;
+  width: 20px;
+  cursor: pointer;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5%;
-    color: #feece0;
+button[type="submit"] {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #7c3aed;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
 }
 
-.title-section {
-    font-family: Source Serif Pro;
-    font-weight: 700;
-    font-size: 1.6rem;
-    line-height: 100%;
-    letter-spacing: 0%;
-    margin: 10px 0px 20px 0px;
-    display: flex;
+button[type="submit"]:hover {
+  background-color: #6d28d9;
 }
 
-.title-section img {
-    width: 40px;
-    height: 40px;
+form > div p {
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.col1 {
-    margin-right: 10%;
+form > div p a {
+  color: #7c3aed;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-.list {
-    font-size: 1.3rem;
-    padding: 2px;
+form > div p a:hover {
+  text-decoration: underline;
 }
 
+.image-complementar {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
 
+.image-complementar img#image-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
